@@ -29,3 +29,5 @@ services:
 
 volumes:
   mongo-data:
+#  Hardcoded JWT_SECRET
+# JWT_SECRET=change-this-to-a-random-secret is committed directly. Using ${JWT_SECRET:-change-this-to-a-random-secret} with a .env.example file keeps secrets out of version control.
